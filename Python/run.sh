@@ -7,6 +7,8 @@ docker run -d -p 4000:80 friendlyhello
 #Or
 #curl http://localhost:4000
 #TAG
-#docker tag friendlyhello ulrichnilsson/python:first_example
+docker tag friendlyhello ulrichnilsson/python:first_example
 #Push
-#docker push ulrichnilsson/python:first_example 
+docker push ulrichnilsson/python:first_example 
+
+docker run -d -p 4000:80 ulrichnilsson/python:first_example 

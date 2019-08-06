@@ -1,0 +1,1 @@
+docker run -ti arm32v6/alpine:3.5 /bin/sh
