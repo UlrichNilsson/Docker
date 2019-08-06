@@ -10,5 +10,8 @@ docker run -d -p 4000:80 friendlyhello
 docker tag friendlyhello ulrichnilsson/python:first_example
 #Push
 docker push ulrichnilsson/python:first_example 
-
+#Run 
 docker run -d -p 4000:80 ulrichnilsson/python:first_example 
+#Stack deploy
+docker stack deploy -c docker-compose.yml getstartedlab
+
