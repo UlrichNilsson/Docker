@@ -14,4 +14,5 @@ docker push ulrichnilsson/python:first_example
 docker run -d -p 4000:80 ulrichnilsson/python:first_example 
 #Stack deploy
 docker stack deploy -c docker-compose.yml getstartedlab
-
+#Stack remove
+docker stack rm getstartedlab
