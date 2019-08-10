@@ -1,4 +1,4 @@
-version: '2'
+version: '3s'
 services:
   jenkins:
     image: jenkins:latest
