@@ -7,6 +7,7 @@ services:
       replicas: 5
       restart_policy:
         condition: on-failure
+        max_attempts: 3
       resources:
         limits:
           cpus: "0.1"
@@ -23,6 +24,9 @@ services:
       - "/home/docker/data:/data"
     deploy:
       replicas: 5
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
     command: redis-server --appendonly yes
     networks:
       - webnet
