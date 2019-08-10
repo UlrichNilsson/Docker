@@ -21,6 +21,8 @@ services:
       - "6379:6379"
     volumes:
       - "/home/docker/data:/data"
+    deploy:
+      replicas: 5
     command: redis-server --appendonly yes
     networks:
       - webnet
