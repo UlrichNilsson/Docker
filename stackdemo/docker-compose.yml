@@ -4,6 +4,7 @@ services:
   web:
     image: ulrichnilsson/python:v2
     deploy:
+      mode: replicated
       replicas: 2
       restart_policy:
         condition: on-failure
