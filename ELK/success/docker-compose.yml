@@ -65,7 +65,7 @@ services:
     networks:
       - elk-backend       
     ports:
-      - "5000:5000"    # Logstash will listen on port 5000 for log data from the Docker Syslog logging driver
+      - "5003:5000"    # Logstash will listen on port 5000 for log data from the Docker Syslog logging driver
     volumes:
       - logstashpipeline:/usr/share/logstash/pipeline/
   
