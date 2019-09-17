@@ -9,7 +9,8 @@ services:
       restart_policy:
         condition: on-failure
       placement:
-        constraints: [node.platform.architecture == x86_64]
+        constraints:
+          - node.labels.os == centos
     ports:
       - "15672:15672"
     networks:
