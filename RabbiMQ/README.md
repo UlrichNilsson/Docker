@@ -13,5 +13,6 @@ docker stack deploy --compose-file=docker-compose.yml RabbitMQMan
 # Delete stack
 docker stack rm RabbitMQMan
 
-
+# http swarm
+http://pcs01:15672/
 
