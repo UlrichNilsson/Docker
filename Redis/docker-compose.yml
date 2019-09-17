@@ -3,7 +3,12 @@ services:
   redis:
     image: redis:latest
     deploy:
-      replicas: 1
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints:
+          - node.labels.os == centos
     configs:
       - my_config
       - my_other_config
