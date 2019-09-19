@@ -8,6 +8,9 @@ services:
       restart_policy:
         condition: on-failure
         max_attempts: 3
+      placement:
+        constraints:
+          - node.labels.os == centos
       resources:
         limits:
           cpus: "0.1"
