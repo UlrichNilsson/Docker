@@ -10,7 +10,7 @@ services:
         max_attempts: 3
       placement:
         constraints:
-          - node.labels.os == centos
+          - node.labels.os == raspbian
       resources:
         limits:
           cpus: "0.1"

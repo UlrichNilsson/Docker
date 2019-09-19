@@ -38,3 +38,6 @@ docker container run --interactive --tty --rm `
   mcr.microsoft.com/windows/servercore:ltsc2019 powershell
 ### Nano for windows
 docker container run mcr.microsoft.com/windows/nanoserver:latest hostname
+
+###Node label
+docker node update --label-add os=raspbian kmrvlf4yhha2nfeocltljb97t
