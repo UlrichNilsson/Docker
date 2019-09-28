@@ -14,4 +14,5 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.0
 WORKDIR /app
 COPY --from=build-env /app/out .
 RUN ls
+EXPOSE 5001
 ENTRYPOINT ["dotnet", "CoreAPI.dll"]
