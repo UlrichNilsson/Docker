@@ -10,6 +10,9 @@ http://localhost:15672
 # Stack deploy
 docker stack deploy --compose-file=docker-compose.yml RabbitMQMan 
 
+# Stack deploy mac
+docker stack deploy --compose-file=docker-compose.mac.yml RabbitMQMan 
+
 # Delete stack
 docker stack rm RabbitMQMan
 
