@@ -1,7 +1,7 @@
 http://localhost:5601/
 
-#Stack deploy
+# Stack deploy
 docker stack deploy -c docker-compose.yml myElk
 
-#Remove
+# Remove
 docker stack rm myElk
