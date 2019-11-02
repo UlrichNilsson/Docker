@@ -3,7 +3,8 @@ version: '3.7'
 services:
   alphinetest:
     image: ulrichnilsson/alphinetest
-    replicas: 1
-    restart_policy:
-      condition: on-failure
-      max_attemts: 5
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        max_attemts: 5
