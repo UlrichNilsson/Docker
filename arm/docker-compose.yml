@@ -7,4 +7,4 @@ services:
       replicas: 1
       restart_policy:
         condition: on-failure
-        max_attemts: 5
+        max_attempts: 5
