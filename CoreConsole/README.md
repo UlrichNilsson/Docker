@@ -1,6 +1,9 @@
 # Build and run a core console application in docker
+
 ## Build
-docker build -t coreconsole . 
+
+`docker build -t ulrichnilsson/coreconsole .`
 
 ## Run
-docker run coreconsole
+
+`docker run ulrichnilsson/coreconsole`
