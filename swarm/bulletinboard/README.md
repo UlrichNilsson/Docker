@@ -1,2 +1,3 @@
 # Deploy to stack
-docker stack deploy -c bb-stack.yaml demo
+
+`docker stack deploy -c bb-stack.yaml demo`

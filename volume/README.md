@@ -1,14 +1,21 @@
-# Create volume
-docker volume create mydata
+# Laborate with volumes
 
-# Inspect
-docker volume inspect mydata
+## Create volume
 
-# Remove volume
-docker volume rm my-vol
+`docker volume create mydata`
 
-# docker compose
-docker-compose up
+## Inspect
 
-# Remove image
-docker image rm name -f
+`docker volume inspect mydata`
+
+## Remove volume
+
+`docker volume rm my-vol`
+
+## docker compose
+
+`docker-compose up`
+
+## Remove image
+
+`docker image rm name -f`
