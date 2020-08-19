@@ -18,6 +18,8 @@
 
 `docker exec -it <mycontainer> bash`
 
-### Result
+### Result (not working)
 
-`curl http://localhost:5001`
+`curl http://localhost:5001/weatherforecast`
+
+<https://localhost:5001/weatherforecast>
