@@ -20,7 +20,7 @@ docker run -d --hostname my-rabbit --name some-rabbit rabbitmq:3
 ### From Dockerfile - Management
 
 docker build -t my-rabbit-app .
-docker run -p 15672:15672 -it --rm --name my-running-app my-rabbit-app 
+docker run -p 15672:15672 -it --rm --name my-running-app my-rabbit-app
 
 ### Management
 
