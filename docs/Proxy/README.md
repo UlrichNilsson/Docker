@@ -2,10 +2,10 @@
 
 ## Docker variables
 
-`ARG HTTP_PROXY=http://$user_name:$user_password@gias.sebank.se:8080`
+`ARG HTTP_PROXY=http://$user_name:$user_password@gias.sebank.se:8080`  
 `ARG HTTPS_PROXY=http://$user_name:$user_password@gias.sebank.se:8080`
 
-`ARG http_proxy=$HTTP_PROXY`
+`ARG http_proxy=$HTTP_PROXY`  
 `ARG https_proxy=$HTTPS_PROXY`
 
 ### libfetch
@@ -19,6 +19,8 @@
 ## Alphine
 
 <https://github.com/gliderlabs/docker-alpine/issues/191>
+
+## APK
 
 ## nginxplus
 
