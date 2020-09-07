@@ -1,21 +1,29 @@
-# Docker run with port mapping
-docker run -d --hostname rabbitmq_man --name rabbitmq_man -p 15672:15672 rabbitmq:3-management
+# Rabbit MQ examples
 
-# Docker compose
-docker-compose up -d
+## Docker run with port mapping
 
-# http local
-http://localhost:15672
+`docker run -d --hostname rabbitmq_man --name rabbitmq_man -p 15672:15672 rabbitmq:3-management`
 
-# Stack deploy
-docker stack deploy --compose-file=docker-compose.yml RabbitMQMan 
+## Docker compose
 
-# Stack deploy mac
-docker stack deploy --compose-file=docker-compose.mac.yml RabbitMQMan 
+`docker-compose up -d`
 
-# Delete stack
-docker stack rm RabbitMQMan
+## http local
 
-# http swarm
-http://pcs01:15672/
+<http://localhost:15672>
 
+## Stack deploy
+
+`docker stack deploy --compose-file=docker-compose.yml RabbitMQMan`
+
+## Stack deploy mac
+
+`docker stack deploy --compose-file=docker-compose.mac.yml RabbitMQMan`
+
+## Delete stack
+
+`docker stack rm RabbitMQMan`
+
+## http swarm
+
+<http://pcs01:15672/>

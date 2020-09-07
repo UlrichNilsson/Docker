@@ -1,7 +1,9 @@
-# Navigate to
-http://localhost:8080
+# Setting up worldpress
 
-# Setup
+## Navigate to
 
-# Use root/example as user/password credentials
+<http://localhost:8080>
 
+## Setup
+
+## Use root/example as user/password credentials
